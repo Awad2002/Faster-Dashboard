@@ -1196,258 +1196,124 @@
 
 
                             <!-- Start Search Nav -->
-                            <div class="search-nav p-6 bg-white rounded shadow-sm mb-10">
-                                <h5 class="mb-4"> Add or Search Customer </h5>
-                                <div class="position-relative" action="none">
-                                    <input type="search" name="search" id="search" placeholder="Enter the Customer mobile number" class="p-4 w-100" style="border: 1px solid #ccc;">
+                            <div class="search-box p-6 bg-white rounded shadow-sm mb-8 d-flex align-items-center">
+                                <div class="position-relative d-inline-block w-100" action="none">
+                                    <input type="search" name="search" id="search" placeholder="Search in orders" class="p-4 w-100" style="border: 1px solid #ccc; display: inline-block;">
                                     <button class="btn" style="position: absolute; top: 0px; right: 0px; background-color: rgb(255,3,0); height: 100%; width: 140px; border-radius: 0 !important;"> <i class="fas fa-search text-white" style="font-size: 17px;"></i> </button>
                                 </div>
+                                <button class="btn d-inline-block"> <i class="fas fa-sliders-h" style="font-size: 20px;"></i> </button>
                             </div>
                             <!-- End Search Nav -->
 
                             <!-- Start Customer Details Form -->
-                            <div class="shadow-sm bg-white rounded-2 overflow-hidden add-order" style="display: none;">
-                                <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link active rounded-0" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true" style="font-size: 16px; padding: 13px 21px !important;"> Customer Details </button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                      <button class="nav-link rounded-0" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false" style="font-size: 16px; padding: 13px 21px !important;"> Driver Details </button>
-                                    </li>
-                                  </ul> 
-                                  <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane p-5 fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-
-                                            
-                                            <label class="form-check form-check-custom form-check-solid mb-6">
-                                                <input class="form-check-input address1" type="radio" name="address" checked/>
-                                                <p class="form-check-label fw-bold mb-0 mt-0 h5">
-                                                    Customer Address 1
-                                                </p>
-                                            </label>
-
-                                            <label class="form-check form-check-custom form-check-solid mb-6">
-                                                <input class="form-check-input bg-secondray new-address" type="radio" name="address"/>
-                                                <p class="form-check-label fw-bold mb-0 mt-0 h5">
-                                                    Add New Address
-                                                </p>
-                                            </label>
-
-                                            <form class="prev-address-form address1">
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="name" class="mb-1 fw-bold required">Full Name</label>
-                                                        <input type="text" name="name" id="name" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Your Full Name" value="Amr Awad" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="phone" class="mb-1 fw-bold required">Mobile number</label>
-                                                        <input type="text" name="phone" id="phone" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Your mobile number" value="0592036504" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="area" class="mb-1 fw-bold required">Area</label>
-                                                        <select type="text" name="area" id="area" class="rounded w-100 d-block border-1 border-gray" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                            <option value="area1"> Area 1 </option>
-                                                            <option value="area2"> Area 2 </option>
-                                                            <option value="area3" selected> Abdally </option>
-                                                            <option value="area4"> Area 4 </option>
-                                                            <option value="area5"> Area 5 </option>
-                                                            <option value="area6"> Area 6 </option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="block" class="mb-1 fw-bold required">Block</label>
-                                                        <select type="text" name="block" id="block" class="rounded w-100 d-block border-1 border-gray" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                            <option value="block1"> 1 </option>
-                                                            <option value="block2"> 2 </option>
-                                                            <option value="block3" selected> 3 </option>
-                                                            <option value="block4"> 4 </option>
-==
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="street" class="mb-1 fw-bold required">Street</label>
-                                                        <input type="text" name="street" id="street" class="rounded w-100 d-block border-1 border-gray "  value="Omar Al Muktar Streer" placeholder="Enter Street" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="mb-2 fw-bold d-block required">Select Unit Type</label>
-                                                        <div class="unit-type">
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value" disabled/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-home me-2"></i> Home </div>
-                                                            </label>      
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value" checked="checked" disabled/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-building me-2"></i> Apartment </div>
-                                                            </label>      
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value" disabled/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="las la-briefcase me-2" style="font-size: 15px;"></i> Office </div>
-                                                            </label>      
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 mb-6">
-                                                        <label for="floor" class="mb-1 fw-bold required">Floor/door no</label>
-                                                        <input type="text" name="floor" id="floor" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Floot Num" value="4" style="padding: 13px; border: 1px solid #ccc;" disabled>
-                                                    </div>
-                                                    <div class="col-md-6"></div>
-                                                    <div class="mb-3">
-                                                        <button class="btn btn-primary me-3" style="width: 160px; padding: 15px;"> Continue </button>
-                                                        <button class="btn btn-secondary" style="width: 160px; padding: 15px;"> Cancel </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-                                            <form class="new-address-form" style="display: none;">
-                                                <div class="row">
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="name" class="mb-1 fw-bold required">Full Name</label>
-                                                        <input type="text" name="name" id="name" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Your Full Name" style="padding: 13px; border: 1px solid #ccc;">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="phone" class="mb-1 fw-bold required">Mobile number</label>
-                                                        <input type="text" name="phone" id="phone" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Your mobile number" style="padding: 13px; border: 1px solid #ccc;">
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="area" class="mb-1 fw-bold required">Area</label>
-                                                        <select type="text" name="area" id="area" class="rounded w-100 d-block border-1 border-gray" style="padding: 13px; border: 1px solid #ccc;">
-                                                            <option value="area1"> Select Area </option>
-                                                            <option value="area2"> Area 2 </option>
-                                                            <option value="area3"> Abdally </option>
-                                                            <option value="area4"> Area 4 </option>
-                                                            <option value="area5"> Area 5 </option>
-                                                            <option value="area6"> Area 6 </option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="block" class="mb-1 fw-bold required">Block</label>
-                                                        <select type="text" name="block" id="block" class="rounded w-100 d-block border-1 border-gray" style="padding: 13px; border: 1px solid #ccc;">
-                                                            <option value="block1"> Select Block </option>
-                                                            <option value="block2"> 2 </option>
-                                                            <option value="block3" selected> 3 </option>
-                                                            <option value="block4"> 4 </option>
-==
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-6 mb-5">
-                                                        <label for="street" class="mb-1 fw-bold required">Street</label>
-                                                        <input type="text" name="street" id="street" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Street" style="padding: 13px; border: 1px solid #ccc;">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label class="mb-2 fw-bold d-block required">Select Unit Type</label>
-                                                        <div class="unit-type">
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value"/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-home me-2"></i> Home </div>
-                                                            </label>      
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value" checked="checked"/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-building me-2"></i> Apartment </div>
-                                                            </label>      
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="radioname" value="one_value"/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="las la-briefcase me-2" style="font-size: 15px;"></i> Office </div>
-                                                            </label>      
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-md-6 mb-6">
-                                                        <label for="floor" class="mb-1 fw-bold required">Floor/door no</label>
-                                                        <input type="text" name="floor" id="floor" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Floot Num" style="padding: 13px; border: 1px solid #ccc;">
-                                                    </div>
-                                                    <div class="col-md-6"></div>
-                                                    <div class="mb-3">
-                                                        <button class="btn btn-primary me-3" style="width: 160px; padding: 15px;"> Add </button>
-                                                        <button class="btn btn-secondary" style="width: 160px; padding: 15px;"> Cancel </button>
-                                                    </div>
-                                                </div>
-                                            </form>
-
-
-                                    </div>
-
-                                    <div class="tab-pane p-5 fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                                        <form action="#">
-                                            <div class="row">
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label class="mb-2 fw-bold d-block">Select Vechicle Type</label>
-                                                    <div class="unit-type">
-                                                        <form action="#">
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="car" value="one_value" checked="checked"/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-car me-2"></i> Car </div>
-                                                            </label>      
-                                                            <label class="unit-box">
-                                                                <input type="radio" name="car" value="one_value"/>
-                                                                <div class="d-flex" style="align-items: center;"> <i class="fas fa-bicycle me-2"></i> Bike </div>
-                                                            </label>      
-                                                        </form>
-                                                    </div>
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="area" class="mb-1 fw-bold">Order Type</label>
-                                                    <select type="text" name="area" id="area" class="rounded w-100 d-block border-1 border-gray " style="padding: 13px; border: 1px solid #ccc;">
-                                                        <option value="order1"> Order 1 </option>
-                                                        <option value="order2"> Order 2 </option>
-                                                        <option value="order3"> Order 3 </option>
-                                                        <option value="order4"> Order 4 </option>
-                                                        <option value="order5"> Order 5 </option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="pickup" class="mb-1 fw-bold">Pick Up Type</label>
-                                                    <input type="text" name="pickup" id="pickup" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Pick Up Type" style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="area" class="mb-1 fw-bold"> Payment Methode </label>
-                                                    <select type="text" name="area" id="area" class="rounded w-100 d-block border-1 border-gray " style="padding: 13px; border: 1px solid #ccc;">
-                                                        <option value="order1"> Methode 1 </option>
-                                                        <option value="order2"> Methode 2 </option>
-                                                        <option value="order3"> Methode 3 </option>
-                                                        <option value="order4"> Methode 4 </option>
-                                                        <option value="order5"> Methode 5 </option>
-                                                    </select>
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="inamount" class="mb-1 fw-bold">Invoice Amount</label>
-                                                    <input type="text" name="inamount" id="inamount" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Invoice Amount" style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="invoice-no" class="mb-1 fw-bold">Invoice No.</label>
-                                                    <input type="text" name="invoice-no" id="invoice-no" class="rounded w-100 d-block border-1 border-gray " value="732192913" disabled style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="invoice-no" class="mb-1 fw-bold">Total Credits</label>
-                                                    <input type="text" name="invoice-no" id="invoice-no" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Total Credits" style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="deliverycharge" class="mb-1 fw-bold">Delivery Charge</label>
-                                                    <input type="text" name="deliverycharge" id="deliverycharge" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Delivery Charge" style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="col-md-6 mb-3">
-                                                    <label for="kilometers" class="mb-1 fw-bold">Kilometers</label>
-                                                    <input type="text" name="kilometers" id="kilometers" class="rounded w-100 d-block border-1 border-gray " placeholder="Enter Kilometers" style="padding: 13px; border: 1px solid #ccc;">
-                                                </div>
-
-                                                <div class="mt-3 mb-5">
-                                                    <input type="checkbox"> <span> Are you sure you want to do this delivery? </span>
-                                                </div>
-
-                                                <div class="mb-2">
-                                                    <button class="btn btn-primary me-3" style="width: 160px; padding: 15px;"> Add </button>
-                                                    <button class="btn btn-secondary" style="width: 160px; padding: 15px;"> Cancel </button>
-                                                </div>
+                            <div class="row">
+                                <div class="col-9">
+                                                                <!-- Start Table -->
+                            <table class="bg-white shadow-sm table table-striped table-rounded border border-gray-300 table-row-bordered table-row-gray-300 gy-6 gs-6 overview-auto">
+                                <thead>
+                                    <tr class="fs-6 text-white bg-dark ">
+                                        <th scope="col">#</th>
+                                        <th scope="col">Name</th>
+                                        <th scope="col">Email</th>
+                                        <th scope="col">Address</th>
+                                        <th scope="col">Date</th>
+                                        <th scope="col">Credit</th>
+                                        <th scope="col">Debit</th>
+                                        <th scope="col">Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th scope="row">1</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-success">
+                                                Completed
                                             </div>
-                                        </form>
-                                    </div>
-                                  </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">2</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-danger">
+                                                Late
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">3</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-warning">
+                                                On Route
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">4</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-success">
+                                                Completed
+                                            </div>
+                                        </th>>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">5</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-danger">
+                                                Late
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">6</th>
+                                        <th scope="row">Amr Awad</th>
+                                        <th scope="row">awadamr33@gmail.com</th>
+                                        <th scope="row">Gaza, Palestine</th>
+                                        <th scope="row">15/04/2020</th>
+                                        <th scope="row">4</th>
+                                        <th scope="row">0</th>
+                                        <th scope="row">
+                                            <div class="badge bg-warning">
+                                                On Route
+                                            </div>
+                                        </th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <!-- End Table -->
+                                </div>
+                                <div class="col-3">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2661.7566881028497!2d47.97628308894491!3d29.37366416949882!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1629992362596!5m2!1sen!2s" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                                </div>
                             </div>
                             <!-- End Customer Details Form -->
 
