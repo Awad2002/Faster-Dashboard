@@ -1080,7 +1080,53 @@
                             </div>
                             <!-- End Search Nav -->   
 
-                            <button class="btn btn-primary mb-6">  <i class="fas fa-plus me-1"></i> Add Users </button>
+                                                        <!-- End Add User -->
+
+                                                        <button type="button" class="btn btn-primary mb-6" data-bs-toggle="modal" data-bs-target="#new_coupon">  <i class="fas fa-plus me-1"></i> Add User </button>
+
+                                                        <div class="modal fade" tabindex="-1" id="new_coupon">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title"> Add User </h5>
+                                                        
+                                                                        <!--begin::Close-->
+                                                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                                                            <span class="svg-icon svg-icon-2x"></span>
+                                                                        </div>
+                                                                        <!--end::Close-->
+                                                                    </div>
+                                                        
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Name</label>
+                                                                                <input type="text" class="form-control" placeholder="Enter User Name"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Email</label>
+                                                                                <input type="email" class="form-control" placeholder="Enter User Email"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Phone</label>
+                                                                                <input type="number" class="form-control" placeholder="Enter User Phone : 1234 5678"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Address</label>
+                                                                                <input type="text" class="form-control" placeholder="Enter User Address"/>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                        
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Add User</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        
+                                                        <!-- Start Add User -->
                             
                             <div class="row">
                                 <div class="col-12">
@@ -1103,7 +1149,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">2</th>
@@ -1111,7 +1168,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">3</th>
@@ -1119,7 +1187,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">4</th>
@@ -1127,7 +1206,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">5</th>
@@ -1135,7 +1225,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">6</th>
@@ -1143,7 +1244,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">7</th>
@@ -1151,7 +1263,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">8</th>
@@ -1159,7 +1282,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">9</th>
@@ -1167,7 +1301,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">10</th>
@@ -1175,7 +1320,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">11</th>
@@ -1183,7 +1339,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">12</th>
@@ -1191,7 +1358,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             <tr>
                                                 <th scope="row">13</th>
@@ -1199,7 +1377,18 @@
                                                 <th scope="row">palmers@restur.net</th>
                                                 <th scope="row">4468 5476</th>
                                                 <th scope="row">Kuwait City, Kuwait 6322</th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-lock text-dark"></i> Change Password </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-edit text-dark"></i> Edit </button></li>
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete account </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                         </tbody>
                                     </table>

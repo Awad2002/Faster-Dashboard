@@ -333,7 +333,7 @@
                                             <span class="h-20px border-gray-200 border-start ms-3 mx-2"></span>
                                             <!--end::Separator-->
                                             <!--begin::Description-->
-                                            <small class="text-muted fs-7 fw-bold my-1 ms-1"> Coupons </small>
+                                            <small class="text-muted fs-7 fw-bold my-1 ms-1"> Admins </small>
                                             <!--end::Description-->
                                         </h1>
                                     </div>
@@ -1075,7 +1075,52 @@
                         <!--begin::Container-->
                         <div id="kt_content_container" class="container">  
 
-                            <button class="btn btn-primary mb-6">  <i class="fas fa-plus me-1"></i> Add Admin </button>
+                                                        <!-- Start Add Admin -->
+
+                                                        <button type="button" class="btn btn-primary mb-6" data-bs-toggle="modal" data-bs-target="#add_admin">  <i class="fas fa-plus me-1"></i> Add Admin </button>
+
+                                                        <div class="modal fade" tabindex="-1" id="add_admin">
+                                                            <div class="modal-dialog">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-header">
+                                                                        <h5 class="modal-title"> Add Admin </h5>
+                                                        
+                                                                        <!--begin::Close-->
+                                                                        <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                                                            <span class="svg-icon svg-icon-2x"></span>
+                                                                        </div>
+                                                                        <!--end::Close-->
+                                                                    </div>
+                                                        
+                                                                    <div class="modal-body">
+                                                                        <form>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Name</label>
+                                                                                <input type="text" class="form-control" placeholder="Enter Admin Name"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Email</label>
+                                                                                <input type="email" class="form-control" placeholder="Enter Admin Email"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Password</label>
+                                                                                <input type="password" class="form-control" placeholder="Enter Admin Password"/>
+                                                                            </div>
+                                                                            <div class="mb-4">
+                                                                                <label class="required form-label">Retype Passwird</label>
+                                                                                <input type="password" class="form-control" placeholder="Retype Password"/>
+                                                                            </div>
+                                                                        </form>
+                                                                    </div>
+                                                        
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                                                        <button type="button" class="btn btn-primary">Add Admin</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- Start Add Admin -->
                             
                             <div class="row">
                                 <div class="col-12">
@@ -1097,7 +1142,17 @@
                                                 <th scope="row"> Ayman </th>
                                                 <th scope="row"> ayman@000itkw.com </th>
                                                 <th scope="row"> 15/04/2020 - 08:55AM </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
                                             
                                             <tr>
@@ -1105,7 +1160,17 @@
                                                 <th scope="row"> Baraa </th>
                                                 <th scope="row"> baraa@000itkw.com </th>
                                                 <th scope="row"> 29/08/2021 - 09:41PM </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                         </tbody>

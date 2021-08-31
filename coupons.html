@@ -1084,7 +1084,53 @@
                             </div>
                             <!-- End Search Nav -->   
 
-                            <button class="btn btn-primary mb-6">  <i class="fas fa-plus me-1"></i> New Coupon </button>
+                            <!-- Start New Coupon -->
+
+                            <button type="button" class="btn btn-primary mb-6" data-bs-toggle="modal" data-bs-target="#new_coupon">  <i class="fas fa-plus me-1"></i> New Coupon </button>
+
+                            <div class="modal fade" tabindex="-1" id="new_coupon">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title"> New Coupon </h5>
+                            
+                                            <!--begin::Close-->
+                                            <div class="btn btn-icon btn-sm btn-active-light-primary ms-2" data-bs-dismiss="modal" aria-label="Close">
+                                                <span class="svg-icon svg-icon-2x"></span>
+                                            </div>
+                                            <!--end::Close-->
+                                        </div>
+                            
+                                        <div class="modal-body">
+                                            <form>
+                                                <div class="mb-4">
+                                                    <label class="required form-label">Coupon Name</label>
+                                                    <input type="text" class="form-control" placeholder="Enter Coupon Name"/>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label class="form-label">Limit Users</label>
+                                                    <input type="number" class="form-control" placeholder="Enter Limit Users for Coupon"/>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label class="required form-label">Discount (%)</label>
+                                                    <input type="number" class="form-control" placeholder="Enter Discount percent"/>
+                                                </div>
+                                                <div class="mb-4">
+                                                    <label class="required form-label">Expired Date</label>
+                                                    <input type="date" class="form-control" placeholder="Enter Expired Date"/>
+                                                </div>
+                                            </form>
+                                        </div>
+                            
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-light" data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Add Coupon</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Start New Coupon -->
                             
                             <div class="row">
                                 <div class="col-12">
@@ -1106,7 +1152,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1114,7 +1170,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1122,7 +1188,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1130,7 +1206,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1138,7 +1224,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1146,7 +1242,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1154,7 +1260,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1162,7 +1278,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1170,7 +1296,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1178,7 +1314,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1186,7 +1332,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                             <tr>
@@ -1194,7 +1350,17 @@
                                                 <th scope="row"> discount12 </th>
                                                 <th scope="row"> 10% </th>
                                                 <th scope="row"> 15/04/2020 </th>
-                                                <th scope="row"> <button class="btn p-0"> <i class="fas text-dark fs-1 fa-ellipsis-h"></i> </button> </th>
+                                                <th scope="row">
+                                                    <div class="dropdown">
+                                                        <button class="btn p-0" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                                            <i class="fas text-dark fs-1 fa-ellipsis-h"></i>
+                                                        </button>
+                                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                                            <li><button class="dropdown-item pt-3 pb-3 text-dark" href="#"> <i class="fas me-1 fa-pen text-dark"></i> Edit </button></li>
+                                                          <li><button class="dropdown-item pt-3 pb-3 text-danger" href="#"> <i class="fas text-danger me-1 fa-times"></i> Delete </button></li>
+                                                        </ul>
+                                                      </div>
+                                                </th>
                                             </tr>
 
                                         </tbody>
